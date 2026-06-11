@@ -1,0 +1,96 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Sushiro All Star | Justin Ho">
+  <a href="/portfolio" class="back-link">← Back to Portfolio</a>
+
+  <section class="project-hero">
+    <p class="eyebrow">Videographer & Editor</p>
+    <h1>Sushiro All Star Videos</h1>
+    <p class="client">Client: Sushiro Singapore</p>
+  </section>
+
+
+<section class="video-section">
+  <iframe
+    src="https://player.vimeo.com/video/865927934"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</section>
+
+  <section class="project-details">
+    <h2>Project Overview</h2>
+      <p>
+        Sushiro All Star is a recurring monthly video series created to showcase seasonal ingredients, limited-time menu items and promotional offerings from Sushiro Singapore.
+      </p>
+      <p>
+        For this project, I was responsible for both cinematography and editing. Each episode required us to present the featured ingredients in the most appealing way possible, highlighting freshness, texture and colour while working within the practical constraints of a restaurant environment.
+      </p>
+      <p>
+        Inspired by high-end food films and culinary documentaries, the creative challenge was to achieve a premium visual aesthetic using a lean production setup, limited equipment and tight turnaround times. Through careful lighting, camera movement and editing, we aimed to elevate everyday menu items into visually engaging stories that would capture attention across digital platforms.
+      </p>
+      <p>
+        As the series evolved, the production process became increasingly refined, allowing us to work more efficiently while maintaining a consistent visual style across each monthly release.
+      </p>
+
+
+<h2>Role</h2>
+
+<ul>
+  <li>Videography</li>
+  <li>Video Editing</li>
+  <li>Lighting Setup</li>
+  <li>Food Cinematography</li>
+  <li>Colour Grading</li>
+  <li>Delivery for Digital and Social Platforms</li>
+</ul>
+
+  </section>
+</MainLayout>
+
+<style>
+  .back-link {
+    color: var(--muted);
+  }
+
+  .project-hero {
+    max-width: 760px;
+    margin: 64px 0 40px;
+  }
+
+  .eyebrow,
+  .client {
+    color: var(--muted);
+  }
+
+    h1 {
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 16px 0;
+    }
+
+  .hero-image {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 56px;
+  }
+
+  .project-details {
+    max-width: 720px;
+  }
+
+  .video-section {
+  margin-bottom: 56px;
+}
+
+.video-section iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 16px;
+}
+</style>

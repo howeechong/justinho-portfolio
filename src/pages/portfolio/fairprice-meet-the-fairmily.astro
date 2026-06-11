@@ -1,0 +1,101 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Fairprice Meet the Fairmily | Justin Ho">
+  <a href="/portfolio" class="back-link">← Back to Portfolio</a>
+
+  <section class="project-hero">
+    <p class="eyebrow">Editing</p>
+    <h1>Fairprice Meet the Fairmily</h1>
+    <p class="client">Client: NTUC Fairprice</p>
+  </section>
+
+
+<section class="video-section">
+  <iframe
+    src="https://player.vimeo.com/video/1016003243"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</section>
+
+  <section class="project-details">
+    <h2>Project Overview</h2>
+    <p>
+      A video editing project created as part of NTUC FairPrice's "Meet the Fairmily"
+      outreach campaign, a scripted series designed to introduce the public to the
+      people behind FairPrice and celebrate the individuals who keep the organisation
+      running every day.
+    </p>
+
+    <p>
+      Directed by Sabrina Poon, this episode was one of five videos produced for the
+      first season of the series. Although the piece follows a documentary-style
+      presentation, it was built from scripted scenes and performance-driven moments
+      rather than interviews.
+    </p>
+
+    <p>
+      As the editor, I focused on keeping the film pacy, clear and engaging through
+      purposeful cuts, tight rhythm and careful selection of moments that preserved
+      the personality of the featured employee while supporting the campaign's warm
+      and approachable tone.
+    </p>
+
+<h2>Role</h2>
+
+<ul>
+  <li>Video Editing</li>
+  <li>Story Structure & Narrative Development</li>
+  <li>Pacing & Rhythm Design</li>
+  <li>Music & Sound Integration</li>
+  <li>Digital & Social Media Delivery</li>
+</ul>
+  </section>
+</MainLayout>
+
+<style>
+  .back-link {
+    color: var(--muted);
+  }
+
+  .project-hero {
+    max-width: 760px;
+    margin: 64px 0 40px;
+  }
+
+  .eyebrow,
+  .client {
+    color: var(--muted);
+  }
+
+    h1 {
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 16px 0;
+    }
+
+  .hero-image {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 56px;
+  }
+
+  .project-details {
+    max-width: 720px;
+  }
+
+  .video-section {
+  margin-bottom: 56px;
+}
+
+.video-section iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 16px;
+}
+</style>

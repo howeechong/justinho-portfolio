@@ -1,0 +1,98 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Income Comeback Workouts | Justin Ho">
+  <a href="/portfolio" class="back-link">← Back to Portfolio</a>
+
+  <section class="project-hero">
+    <p class="eyebrow">Director & Editor</p>
+    <h1>Income Comeback Workouts Videos</h1>
+    <p class="client">Client: Income Insurance</p>
+  </section>
+
+
+<section class="video-section">
+  <iframe
+    src="https://player.vimeo.com/video/943586187"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</section>
+
+  <section class="project-details">
+    <h2>Project Overview</h2>
+     <p>
+  Comeback Workouts is a documentary-style video series created in partnership between Income Insurance and Singapore Athletics, highlighting the resilience, recovery journeys and support systems behind some of Singapore's young athletes.
+</p>
+
+      <p>
+  Across the series, athletes shared their experiences recovering from injuries, the physical and mental challenges they faced during rehabilitation, and the role that family, coaches and teammates played in helping them return to competition.
+</p>
+<p>
+  For this project, I was involved in both directing and editing. My role included conducting interviews, uncovering personal stories and identifying the narrative threads that would ultimately shape each film. As the interviews unfolded, I began building the story structure in real time, allowing those insights to influence subsequent B-roll decisions and visual storytelling choices.
+</p>
+<p>
+  For this project, I was involved in both directing and editing. My role included conducting interviews, uncovering personal stories and identifying the narrative threads that would ultimately shape each film. As the interviews unfolded, I began building the story structure in real time, allowing those insights to influence subsequent B-roll decisions and visual storytelling choices.
+</p>
+
+
+
+<h2>Role</h2>
+<ul>
+  <li>Creative Direction</li>
+  <li>Interview Conducting</li>
+  <li>Story Development</li>
+  <li>Narrative Structuring</li>
+  <li>Video Editing</li>
+  <li>B-Roll Planning</li>
+</ul>
+
+
+  </section>
+</MainLayout>
+
+<style>
+  .back-link {
+    color: var(--muted);
+  }
+
+  .project-hero {
+    max-width: 760px;
+    margin: 64px 0 40px;
+  }
+
+  .eyebrow,
+  .client {
+    color: var(--muted);
+  }
+
+    h1 {
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 16px 0;
+    }
+
+  .hero-image {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 56px;
+  }
+
+  .project-details {
+    max-width: 720px;
+  }
+
+  .video-section {
+  margin-bottom: 56px;
+}
+
+.video-section iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 16px;
+}
+</style>
