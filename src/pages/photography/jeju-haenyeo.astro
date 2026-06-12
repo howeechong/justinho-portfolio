@@ -1,0 +1,106 @@
+
+
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const images = [
+  '/images/photography/jeju-haenyeo/JEJU_1.jpg',
+    '/images/photography/jeju-haenyeo/JEJU_2.jpg',
+    '/images/photography/jeju-haenyeo/JEJU_3.jpg',
+    '/images/photography/jeju-haenyeo/JEJU_4.jpg',
+
+];
+---
+
+<MainLayout title="Jeju Haenyeo | Justin Ho">
+  <a href="/photography" class="back-link">← Back to Photography</a>
+
+  <section class="project-hero">
+    <p class="eyebrow">Photography</p>
+    <h1>Jeju Haenyeo</h1>
+    <p class="intro">
+      A photographic study of Jeju's legendary Haenyeo, the women divers who have spent generations harvesting the sea without the use of breathing equipment.
+    </p>
+  </section>
+
+  <section class="photo-grid" aria-label="Jeju Haenyeo photo gallery">
+    {images.map((image, index) => (
+      <img
+        src={image}
+        alt={`Jeju Haenyeo ${index + 1}`}
+        loading={index === 0 ? 'eager' : 'lazy'}
+      />
+    ))}
+  </section>
+
+  <section class="project-details">
+    <h2>Project Notes</h2>
+
+    <p>
+      The Haenyeo of Jeju are among the island's most enduring cultural symbols. For generations, these women have made
+      their living free-diving for seafood, relying on skill, experience and an intimate understanding of the sea.
+    </p>
+
+    <p>
+      During a visit to Jeju, I was drawn not only to the tradition itself, but also to the quiet dignity of the women who
+      continue to practise it. Rather than focusing solely on the act of diving, I was interested in documenting the people,
+      environment and everyday moments that surround this unique way of life.
+    </p>
+
+    <p>
+      This series is less about tourism and more about observation. Through these photographs, I hoped to capture a small
+      glimpse of a cultural tradition that continues to endure in a rapidly changing world.
+    </p>
+  </section>
+</MainLayout>
+
+<style>
+  .back-link {
+    display: inline-block;
+    margin-bottom: 48px;
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .project-hero {
+    max-width: 760px;
+    margin-bottom: 56px;
+  }
+
+  .intro {
+    max-width: 680px;
+    color: var(--muted);
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+
+  .photo-grid img {
+    width: 100%;
+    height: 100%;
+    max-height: 620px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .project-details {
+    max-width: 720px;
+  }
+
+  @media (max-width: 720px) {
+    .photo-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .photo-grid img {
+      max-height: none;
+    }
+  }
+</style>

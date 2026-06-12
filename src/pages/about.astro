@@ -4,18 +4,21 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout title="About | Justin Ho">
   <section class="about-page">
-    <img
-      src="/images/photography/justin-ho.jpg"
-      alt="Justin Ho"
-      class="profile-photo"
-    />
+    <div class="about-hero">
+      <img
+        src="/images/photography/justin-ho.jpg"
+        alt="Justin Ho"
+        class="profile-photo"
+      />
 
-    <h1>About Justin</h1>
+      <div class="about-intro">
+        <h1>About Justin</h1>
 
-    <p>
-      I'm Justin Ho, a Singapore-based video editor, videographer and photographer
-      with a passion for storytelling.
-    </p>
+        <p>
+          I'm Justin Ho, a Singapore-based editor, director and visual storyteller with more than a decade of experience creating branded content, documentaries and commercial campaigns.
+        </p>
+      </div>
+    </div>
 
     <p>
       I graduated with a degree in Multimedia Design and have spent more than a
@@ -24,7 +27,16 @@ import MainLayout from "../layouts/MainLayout.astro";
       corporate films, documentaries and digital campaigns for a wide range of
       clients and organisations.
     </p>
-
+    <figure class="behind-the-scenes-block">
+      <img
+        src="/images/about/justin-directing-1600.jpg"
+        alt="Justin directing on set"
+        class="behind-the-scenes"
+      />
+      <figcaption>
+        Reviewing footage with the client while shaping the narrative direction of the film.
+      </figcaption>
+    </figure>
     <p>
       What I enjoy most is finding the story hidden within the material. Whether
       I'm shaping hours of footage into a concise narrative, capturing moments
@@ -47,13 +59,55 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   <style>
     .about-page {
-      max-width: 760px;
+      max-width: 920px;
+    }
+
+    .about-hero {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 48px;
+      align-items: end;
+      margin-bottom: 48px;
     }
 
     .profile-photo {
-      width: 240px;
+      width: 100%;
       border-radius: 16px;
-      margin-bottom: 32px;
+    }
+
+    .about-intro p {
+      margin-bottom: 0;
+    }
+
+    .behind-the-scenes-block {
+      margin: 40px 0;
+    }
+
+    .behind-the-scenes {
+      width: 100%;
+      border-radius: 16px;
+      display: block;
+    }
+
+    figcaption {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-style: italic;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .about-hero {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        align-items: start;
+      }
+
+      .profile-photo {
+        max-width: 320px;
+      }
     }
   </style>
 </MainLayout>

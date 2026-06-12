@@ -1,8 +1,9 @@
 ---
-const { title, category, client, thumbnail, slug } = Astro.props;
+const { title, category, client, thumbnail, slug, link } = Astro.props;
+const href = link ?? `/portfolio/${slug}`;
 ---
 
-<a class="card" href={`/portfolio/${slug}`}>
+<a class="card" href={href}>
   {thumbnail && <img src={thumbnail} alt={`${title} thumbnail`} class="thumbnail" />}
 
   <div class="card-content">

@@ -1,0 +1,62 @@
+
+
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Photography | Justin Ho">
+  <section class="container">
+    <p class="eyebrow">Photography</p>
+    <h1>People. Places. Moments.</h1>
+
+    <p>
+      My photography is rooted in observation and storytelling. Whether documenting athletes,
+      production crews or cultural traditions, I am drawn to the people and moments behind the
+      surface of an event.
+    </p>
+
+    <div class="photo-projects">
+      <a class="project-card" href="/photography/touch-rugby">
+        <h2>Touch Rugby</h2>
+        <p>Action, teamwork and intensity captured from the sidelines.</p>
+      </a>
+
+      <a class="project-card" href="/photography/behind-the-scenes">
+        <h2>Behind the Scenes</h2>
+        <p>The people, preparation and quiet moments behind a commercial production.</p>
+      </a>
+
+      <a class="project-card" href="/photography/jeju-haenyeo">
+        <h2>Jeju Haenyeo</h2>
+        <p>A photographic study of Jeju's legendary diving women and their traditions.</p>
+      </a>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .photo-projects {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .project-card {
+    display: block;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .project-card:hover {
+    transform: translateY(-2px);
+  }
+</style>
