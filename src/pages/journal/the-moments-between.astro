@@ -1,0 +1,147 @@
+---
+import { ACTION_QUERY_PARAMS } from 'astro:actions';
+import MainLayout from '../../layouts/MainLayout.astro';
+---
+
+<MainLayout title="The Moments Between | Justin Ho">
+
+<article class="journal-post">
+  <a href="/journal" class="back-link">← Back to Journal</a>
+  <header class="journal-header">
+    <p class="journal-label">Journal</p>
+    <h1>The Moments Between</h1>
+    <p class="journal-meta">13 June 2026 · Photography</p>
+    <p class="journal-intro">
+      A short reflection on photography, editing, and the quiet moments that often feel the most true.
+    </p>
+    
+  </header>
+
+  <section class="journal-content">
+    <p>People often think photography is about timing.</p>
+
+    <p>Being in the right place at the right moment and pressing the shutter.</p>
+
+    <p>There is some truth to that.</p>
+
+
+
+    <p>They’re the moments in between.</p>
+
+    <p>The moment between poses.</p>
+
+    <p>The moment after someone has finished speaking.</p>
+
+    <p>The moment before an athlete starts moving.</p>
+
+    <p>The moment after a bride and groom stop looking at the camera.</p>
+
+    <p>When photographing people, I often notice something interesting.</p>
+
+    <p>I’ll ask them to smile.</p>
+
+    <p>They give me a smile.</p>
+
+    <p>It’s perfectly fine.</p>
+
+    <p>Then they relax.</p>
+
+    <p>They laugh because they feel awkward.</p>
+
+    <p>Their shoulders drop.</p>
+
+    <p>Their expression changes.</p>
+
+    <p>For a brief second, they stop trying to look good.</p>
+
+    <p>And that’s usually when I take the photograph.</p>
+
+    <p>Not because posed photographs are bad.</p>
+
+    <p>But because the moments between poses often reveal something more authentic.</p>
+
+    <p>I see the same thing when editing documentaries.</p>
+
+<p>The line that makes it into the final film is important.</p>
+<p>But sometimes the most revealing moment is the pause before the line.</p>
+<p>Or the smile afterwards.</p>
+<p>Or the silence that follows.</p>
+
+    <blockquote>
+      <p>The camera records events.<br />
+      The editor searches for meaning.</p>
+    </blockquote>
+
+    <p>Both are really looking for the same thing.</p>
+
+    <p>Moments that reveal something true.</p>
+
+    <p>Perhaps that’s why I’ve always been drawn to documentary storytelling.</p>
+
+    <p>
+      Whether I’m photographing a wedding, filming an interview, editing a corporate story
+      or simply walking around with a camera, I’m rarely looking for perfection.
+    </p>
+
+    <p>I’m looking for the moments between.</p>
+
+    <p>The moments when people stop performing and start being themselves.</p>
+  </section>
+</article>
+</MainLayout>
+
+<style>
+.journal-post {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 32px;
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  .journal-header {
+    margin-bottom: 48px;
+  }
+
+  .journal-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .journal-intro {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--muted);
+    max-width: 640px;
+  }
+
+  .journal-content p {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+  }
+
+blockquote {
+  margin: 24px 0;
+  padding-left: 24px;
+  border-left: 3px solid var(--text);
+}
+
+blockquote p {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+</style>

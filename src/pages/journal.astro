@@ -3,9 +3,80 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Journal | Justin Ho">
-  <h1>Journal</h1>
+  <section class="journal-page">
+    <p class="eyebrow">Journal</p>
+    <h1>Thoughts on stories, images and the moments between.</h1>
 
-  <p>
-    Articles and thoughts coming soon.
-  </p>
+    <p class="journal-intro">
+      Notes and reflections on photography, editing, storytelling and the way visual work helps us notice what matters.
+    </p>
+
+    <div class="journal-list">
+      <a href="/journal/the-moments-between" class="journal-card">
+        <p class="journal-meta">Photography</p>
+        <h2>The Moments Between</h2>
+        <p>
+          A reflection on photography, editing and the authentic moments that often happen between poses.
+        </p>
+        <span>Read Article →</span>
+      </a>
+    </div>
+  </section>
 </MainLayout>
+
+<style>
+  .journal-page {
+    max-width: 900px;
+  }
+
+  .journal-intro {
+    max-width: 680px;
+    color: var(--muted);
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 56px;
+  }
+
+  .journal-list {
+    display: grid;
+    gap: 24px;
+  }
+
+  .journal-card {
+    display: block;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    text-decoration: none;
+    color: inherit;
+    background: var(--bg);
+  }
+
+  .journal-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .journal-meta {
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+  }
+
+  .journal-card h2 {
+    margin: 0 0 12px;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    letter-spacing: -0.03em;
+  }
+
+  .journal-card p {
+    color: var(--muted);
+    max-width: 640px;
+  }
+
+  .journal-card span {
+    display: inline-block;
+    margin-top: 16px;
+  }
+</style>
