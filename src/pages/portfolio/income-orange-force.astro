@@ -1,0 +1,100 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Income Orange Force | Justin Ho">
+  <a href="/portfolio" class="back-link">← Back to Portfolio</a>
+
+  <section class="project-hero">
+    <p class="eyebrow">Commercial Film Editor</p>
+    <h1>Income Orange Force Commercial</h1>
+    <p class="client">Client: Income Insurance</p>
+  </section>
+
+
+<section class="video-section">
+  <iframe
+    src="https://player.vimeo.com/video/854623843"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</section>
+
+  <section class="project-details">
+    <h2>Project Overview</h2>
+  <p>
+Orange Force is a brand film created for Income Insurance, highlighting one of the key services offered under its motor insurance coverage. The Orange Force team consists of trained riders who travel across Singapore to provide on-site assistance to policyholders involved in traffic accidents and other roadside incidents.
+</p>
+<p>
+Directed by Don Aravind and photographed by Chuck Tham, the film follows Ignatius, an Orange Force rider, as he responds to real-world situations on the road. Rather than relying on a traditional explanatory narrative, the story is told through a personal voice-over from Ignatius' wife, reflecting on his dedication, compassion and commitment to helping others. As she speaks, viewers witness moments of service and professionalism before the film concludes with Ignatius returning home to his family.
+</p>
+<p>
+The film was produced for multiple platforms, including cinema, broadcast television and digital channels. The objective was to position Orange Force not simply as a roadside assistance service, but as a team of everyday heroes providing reassurance and support during stressful moments.
+</p>
+
+
+
+<h2>Role</h2>
+<p>
+As offline editor, I was responsible for shaping the final narrative from the available footage, selecting performances and moments that best supported the emotional arc of the film. Working within an approved creative framework, my role focused on balancing the pacing of the voice-over, music and visuals while maintaining clarity and emotional impact across different delivery formats.
+</p>
+
+<ul>
+  <li>Offline Editing</li>
+  <li>Performance Selection</li>
+  <li>Narrative Pacing</li>
+  <li>Music and Voice-over Integration</li>
+  <li>Broadcast & Cinema Versioning</li>
+  <li>Post-production Coordination</li>
+  <li>Delivery Formatting & Technical Compliance</li>
+</ul>
+
+
+
+  </section>
+</MainLayout>
+
+<style>
+  .back-link {
+    color: var(--muted);
+  }
+
+  .project-hero {
+    max-width: 760px;
+    margin: 64px 0 40px;
+  }
+
+  .eyebrow,
+  .client {
+    color: var(--muted);
+  }
+
+    h1 {
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 16px 0;
+    }
+
+  .hero-image {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 56px;
+  }
+
+  .project-details {
+    max-width: 720px;
+  }
+
+  .video-section {
+  margin-bottom: 56px;
+}
+
+.video-section iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 16px;
+}
+</style>

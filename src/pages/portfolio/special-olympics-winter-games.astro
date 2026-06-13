@@ -1,0 +1,98 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<MainLayout title="The Journey | Justin Ho">
+  <a href="/portfolio" class="back-link">← Back to Portfolio</a>
+
+  <section class="project-hero">
+    <p class="eyebrow">Documentary Editing</p>
+    <h1>The Journey</h1>
+    <p class="client">Client: Special Olympics</p>
+  </section>
+
+
+<section class="video-section">
+  <iframe
+    src="https://player.vimeo.com/video/284908558"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</section>
+
+  <section class="project-details">
+    <h2>Project Overview</h2>
+<p>
+The Journey follows Li Xiang, a Special Olympics speed skating athlete from Shanghai, as he prepares to represent China at the Special Olympics World Winter Games in Graz, Austria.
+</p>
+<p>
+While the film documents the challenges and excitement of international competition, its emotional core lies in the relationship between Li Xiang and his mother. From training sessions at the rink to the long journey overseas, the documentary captures the unwavering support, sacrifice and dedication that underpin an athlete's pursuit of a dream.
+</p>
+<p>
+Filmed in Graz, Austria, the story combines observational moments, interviews and competition footage to provide an intimate look into the lives of a family navigating the unique challenges and rewards of elite sport. Rather than focusing solely on medals and results, the film explores perseverance, family bonds and the importance of having someone who believes in you unconditionally.
+</p>
+<p>
+Produced for the 2017 Special Olympics World Winter Games, the documentary offers a human perspective on sport, highlighting the people and relationships that make these journeys possible.
+</p>
+
+
+<h2>Role</h2>
+<p>
+As editor, I worked closely with director Andre Raffleson to shape the documentary's narrative structure and emotional journey. Through the process of reviewing interviews, observational footage and competition coverage, we developed a story that balanced the excitement of the Games with the quieter family moments that gave the film its emotional weight.
+</p>
+<ul>
+  <li>Documentary Editing</li>
+  <li>Story Development</li>
+  <li>Narrative Structuring</li>
+  <li>Interview Editing</li>
+  <li>Music & Emotional Pacing</li>
+  <li>Post-Production Finishing</li>
+</ul>
+
+  </section>
+</MainLayout>
+
+<style>
+  .back-link {
+    color: var(--muted);
+  }
+
+  .project-hero {
+    max-width: 760px;
+    margin: 64px 0 40px;
+  }
+
+  .eyebrow,
+  .client {
+    color: var(--muted);
+  }
+
+    h1 {
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 16px 0;
+    }
+
+  .hero-image {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 56px;
+  }
+
+  .project-details {
+    max-width: 720px;
+  }
+
+  .video-section {
+  margin-bottom: 56px;
+}
+
+.video-section iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 16px;
+}
+</style>

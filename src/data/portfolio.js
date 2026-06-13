@@ -16,6 +16,30 @@ export const portfolioProjects = [
   },
 
   {
+    title: "The Journey",
+    category: "Documentary Editing",
+    client: "Special Olympics",
+    slug: "special-olympics-winter-games",
+    thumbnail: "/images/portfolio/special-olympics-winter-games.jpg"
+  },
+
+  {
+    title: "Income Orange Force",
+    category: "Commercial Film Editing",
+    client: "Income Insurance",
+    slug: "income-orange-force",
+    thumbnail: "/images/portfolio/income-orange-force.jpg"
+  },
+
+    {
+    title: "Baybeats B-sides (the making of baybeats)",
+    category: "Documentary Editing",
+    client: "Esplanade - Theatres on the Bay",
+    slug: "baybeats-b-sides",
+    thumbnail: "/images/portfolio/baybeats-bsides.jpg"
+  },
+
+  {
     title: "Income Comeback Workouts",
     category: "Directing",
     client: "Income Insurance",
