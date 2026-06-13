@@ -17,18 +17,39 @@ import MainLayout from '../layouts/MainLayout.astro';
 
     <div class="photo-projects">
       <a class="project-card" href="/photography/touch-rugby">
-        <h2>Touch Rugby</h2>
-        <p>Action, teamwork and intensity captured from the sidelines.</p>
+        <img
+          src="/images/photography/touch-rugby/TR_5.jpg"
+          alt="Touch rugby players in action"
+          class="project-image"
+        />
+        <div class="project-content">
+          <h2>Touch Rugby</h2>
+          <p>Action, teamwork and intensity captured from the sidelines.</p>
+        </div>
       </a>
 
       <a class="project-card" href="/photography/behind-the-scenes">
-        <h2>Behind the Scenes</h2>
-        <p>The people, preparation and quiet moments behind a commercial production.</p>
+        <img
+          src="/images/photography/behind-the-scenes/BTS_1.jpg"
+          alt="Behind the scenes of a commercial film production"
+          class="project-image"
+        />
+        <div class="project-content">
+          <h2>Behind the Scenes</h2>
+          <p>The people, preparation and quiet moments behind a commercial production.</p>
+        </div>
       </a>
 
       <a class="project-card" href="/photography/jeju-haenyeo">
-        <h2>Jeju Haenyeo</h2>
-        <p>A photographic study of Jeju's legendary diving women and their traditions.</p>
+        <img
+          src="/images/photography/jeju-haenyeo/JEJU_1.jpg"
+          alt="Jeju Haenyeo documentary photograph"
+          class="project-image"
+        />
+        <div class="project-content">
+          <h2>Jeju Haenyeo</h2>
+          <p>A photographic study of Jeju's legendary diving women and their traditions.</p>
+        </div>
       </a>
     </div>
   </section>
@@ -43,20 +64,47 @@ import MainLayout from '../layouts/MainLayout.astro';
 
   .photo-projects {
     display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   .project-card {
     display: block;
-    padding: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 12px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
     text-decoration: none;
     color: inherit;
+    background: var(--bg);
   }
 
   .project-card:hover {
     transform: translateY(-2px);
+  }
+
+  .project-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+  }
+
+  .project-content {
+    padding: 1.5rem;
+  }
+
+  .project-content h2 {
+    margin-top: 0;
+  }
+
+  .project-content p {
+    color: var(--muted);
+  }
+
+  @media (max-width: 900px) {
+    .photo-projects {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
