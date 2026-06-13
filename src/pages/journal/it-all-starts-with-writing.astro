@@ -1,0 +1,152 @@
+---
+import { ACTION_QUERY_PARAMS } from 'astro:actions';
+import MainLayout from '../../layouts/MainLayout.astro';
+---
+
+<MainLayout
+  title="It All Starts With Writing | Justin Ho"
+  description="A personal reflection on writing, clarity, and how ideas take shape before they become reality."
+>
+
+<article class="journal-post">
+    <a href="/journal" class="back-link">← Back to Journal</a>
+  <header class="journal-header">
+    <p class="journal-label">Journal</p>
+    <h1>It All Starts With Writing</h1>
+    <p class="journal-meta">13 June 2026 · Writing</p>
+    <p class="journal-intro">
+      A reflection on writing, clarity, and how ideas begin to take shape.
+    </p>
+  </header>
+
+  <section class="journal-content">
+    <p>Many years ago, a lecturer said something that stayed with me.</p>
+
+    <p>“It all starts with writing.”</p>
+
+    <p>At the time, I thought he was talking about filmmaking.</p>
+
+    <p>Today, I think he was talking about life.</p>
+
+    <p>Looking back, I’ve noticed something strange.</p>
+
+    <p>
+      Many of the things that now occupy my life existed as words long before
+      they became reality.
+    </p>
+
+    <p>LifeGate was writing before it was a business.</p>
+
+    <p>My website was writing before it was a website.</p>
+
+    <p>The apps I’m building were writing before they became software.</p>
+
+    <p>Even this article started as a few sentences typed into a chat.</p>
+
+    <p>
+      When people talk about manifestation, they often imagine thoughts
+      magically becoming reality.
+    </p>
+
+    <p>My experience has been much less mysterious.</p>
+
+    <p>The things that changed my life were not the things I thought about.</p>
+
+    <p>They were the things I wrote down.</p>
+
+    <p>Writing forces an idea to leave the imagination.</p>
+
+    <p>
+      It gives shape to something that previously existed only as a feeling.
+    </p>
+
+    <p>
+      The moment an idea is written, it becomes something you can question,
+      refine, improve and eventually act upon.
+    </p>
+
+    <p>Perhaps that’s why writing feels so powerful.</p>
+
+    <p>Not because it manifests reality.</p>
+
+    <p>But because it creates clarity.</p>
+
+    <p>And clarity has a way of becoming action.</p>
+
+    <p>
+      Looking back, I realise that many of the things I am building today began
+      in exactly the same place.
+    </p>
+
+    <p>A blank page.</p>
+
+    <p>A passing thought.</p>
+
+    <p>A few words written down before they disappeared.</p>
+
+    <p>Maybe that’s why I still write.</p>
+
+    <p>
+      Because every meaningful project in my life seems to start the same way.
+    </p>
+
+    <p>With words.</p>
+  </section>
+</article>
+</MainLayout>
+
+<style>
+.journal-post {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 32px;
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  .journal-header {
+    margin-bottom: 48px;
+  }
+
+  .journal-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .journal-intro {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--muted);
+    max-width: 640px;
+  }
+
+  .journal-content p {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+  }
+
+blockquote {
+  margin: 24px 0;
+  padding-left: 24px;
+  border-left: 3px solid var(--text);
+}
+
+blockquote p {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+</style>

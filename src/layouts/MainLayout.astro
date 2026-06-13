@@ -1,7 +1,10 @@
 ---
 import "../styles/global.css";
 
-const { title = "Justin Ho" } = Astro.props;
+const {
+  title = "Justin Ho",
+  description = "Portfolio, photography, videography and writing by Justin Ho."
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -16,6 +19,7 @@ const { title = "Justin Ho" } = Astro.props;
   <link rel="manifest" href="/site.webmanifest" />
 
   <title>{title}</title>
+  <meta name="description" content={description} />
 </head>
 
   <body>

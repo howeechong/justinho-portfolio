@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { journalPosts } from "../data/journal";
 ---
 
 <MainLayout title="Journal | Justin Ho">
@@ -12,14 +13,14 @@ import MainLayout from "../layouts/MainLayout.astro";
     </p>
 
     <div class="journal-list">
-      <a href="/journal/the-moments-between" class="journal-card">
-        <p class="journal-meta">Photography</p>
-        <h2>The Moments Between</h2>
-        <p>
-          A reflection on photography, editing and the authentic moments that often happen between poses.
-        </p>
-        <span>Read Article →</span>
-      </a>
+      {journalPosts.map((post) => (
+        <a href={post.href} class="journal-card">
+          <p class="journal-meta">{post.category}</p>
+          <h2>{post.title}</h2>
+          <p>{post.description}</p>
+          <span>Read Article →</span>
+        </a>
+      ))}
     </div>
   </section>
 </MainLayout>
