@@ -4,7 +4,7 @@ export const portfolioProjects = [
     category: "Editing",
     client: "NTUC Fairprice",
     slug: "fairprice-meet-the-fairmily",
-    thumbnail: "/images/portfolio/fairprice.png"
+    thumbnail: "/images/portfolio/fairprice.jpg"
   },
 
   {
@@ -44,7 +44,7 @@ export const portfolioProjects = [
     category: "Directing",
     client: "Income Insurance",
     slug: "income-comeback-workouts",
-    thumbnail: "/images/portfolio/incomecomback.png"
+    thumbnail: "/images/portfolio/incomecomback.jpg"
   },
 
     {
@@ -52,7 +52,7 @@ export const portfolioProjects = [
     category: "Videoography & Editing",
     client: "Association of Advertising and Marketing Singapore (AAMS)",
     slug: "nexgen-surprise",
-    thumbnail: "/images/portfolio/nexgen-surprise.png"
+    thumbnail: "/images/portfolio/nexgen-surprise.jpg"
   },
   
     {
