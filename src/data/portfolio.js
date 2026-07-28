@@ -1,5 +1,13 @@
 export const portfolioProjects = [
   {
+    title: "Opening of New Production Facility",
+    category: "Corporate Event / Same-Day Edit",
+    client: "Dutch Industrial Company",
+    slug: "opening-new-production-facility",
+    thumbnail: "/images/portfolio/opening-new-production-facility.jpg"
+  },
+
+  {
     title: "Fairprice Meet the Fairmily",
     category: "Editing",
     client: "NTUC Fairprice",
